@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | CoBuildFun</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <!-- Top Nav -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="landing.html" class="topnav-logo">CoBuildFun</a>
+      <div class="topnav-links">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="explore.html">Explore</a>
+        <a href="team.html">My Team</a>
+        <a href="revenue.html">Revenue</a>
+      </div>
+      <div class="topnav-right">
+        <div class="avatar" title="Priya S.">PS</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container" style="padding-top:2rem;padding-bottom:3rem;">
+
+    <!-- Greeting -->
+    <div class="flex-between mb-3">
+      <div>
+        <h2>Welcome back, Priya</h2>
+        <p class="text-muted">Here's what's happening with your team this week.</p>
+      </div>
+      <a href="explore.html" class="btn btn-primary">+ Join a New Team</a>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="dash-grid-3 mb-3">
+      <div class="card stat-card">
+        <div class="stat-label">Current Phase</div>
+        <div class="stat-value flex-center gap-1">
+          <span class="badge badge-orange">Phase 2</span>
+          MVP Build
+        </div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-label">Week</div>
+        <div class="stat-value">4 <span class="text-small text-muted">of 16</span></div>
+        <div class="progress-bar mt-1">
+          <div class="progress-fill" style="width:25%;"></div>
+        </div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-label">Customer Conversations</div>
+        <div class="stat-value">7 <span class="text-small text-muted">/ 10 goal</span></div>
+        <div class="progress-bar mt-1">
+          <div class="progress-fill green" style="width:70%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Two-column layout -->
+    <div class="dash-grid">
+
+      <!-- Left: My Teams -->
+      <div>
+        <h3 class="mb-2">My Teams</h3>
+
+        <!-- Active Team -->
+        <div class="card mb-2" style="border-left:3px solid var(--blue-600);">
+          <div class="flex-between">
+            <div>
+              <span class="badge badge-orange mb-1">Phase 2 — MVP Build</span>
+              <h4 class="mt-1">StockKaro</h4>
+              <p class="text-small text-muted">SMB inventory management for hardware stores</p>
+            </div>
+            <a href="team.html" class="btn btn-secondary btn-sm">Open</a>
+          </div>
+          <div class="flex-center gap-2 mt-2">
+            <div class="avatar-stack">
+              <div class="avatar avatar-sm" style="background:var(--blue-100);color:var(--blue-600);" title="Priya S.">PS</div>
+              <div class="avatar avatar-sm" style="background:var(--green-100);color:var(--green-500);" title="Arjun M.">AM</div>
+              <div class="avatar avatar-sm" style="background:var(--orange-100);color:var(--orange-500);" title="Neha K.">NK</div>
+            </div>
+            <span class="text-small text-muted">3 members</span>
+          </div>
+          <div class="progress-bar mt-2">
+            <div class="progress-fill" style="width:40%;"></div>
+          </div>
+          <div class="text-small text-muted mt-1">4 of 10 milestones completed</div>
+        </div>
+
+        <!-- Past Team -->
+        <div class="card" style="border-left:3px solid var(--gray-300);opacity:0.7;">
+          <div class="flex-between">
+            <div>
+              <span class="badge badge-gray mb-1">Archived</span>
+              <h4 class="mt-1">QuickBill</h4>
+              <p class="text-small text-muted">Invoice generator for freelancers</p>
+            </div>
+            <span class="text-small text-muted">Phase 3 — Pivoted</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Activity & Upcoming -->
+      <div>
+        <h3 class="mb-2">Recent Activity</h3>
+        <div class="card mb-2">
+          <div class="activity-item">
+            <div class="avatar avatar-sm" style="background:var(--green-100);color:var(--green-500);">AM</div>
+            <div>
+              <div class="activity-text"><strong>Arjun</strong> pushed 3 commits to <code>main</code></div>
+              <div class="activity-time">2 hours ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="avatar avatar-sm" style="background:var(--orange-100);color:var(--orange-500);">NK</div>
+            <div>
+              <div class="activity-text"><strong>Neha</strong> completed customer interview #7</div>
+              <div class="activity-time">5 hours ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="avatar avatar-sm" style="background:var(--blue-100);color:var(--blue-600);">PS</div>
+            <div>
+              <div class="activity-text"><strong>You</strong> finished the inventory list UI component</div>
+              <div class="activity-time">Yesterday</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="avatar avatar-sm" style="background:var(--purple-100);color:var(--purple-500);">CB</div>
+            <div>
+              <div class="activity-text"><strong>CoBuildFun</strong> matched 2 warm intros for StockKaro</div>
+              <div class="activity-time">2 days ago</div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mb-2">Upcoming</h3>
+        <div class="card">
+          <div class="milestone">
+            <div class="milestone-header">
+              <div class="milestone-check">&#10003;</div>
+              <span class="milestone-title">Weekly standup — Thursday 6pm</span>
+            </div>
+          </div>
+          <div class="milestone">
+            <div class="milestone-header">
+              <div class="milestone-check">&#10003;</div>
+              <span class="milestone-title">Ship MVP beta to 3 test users</span>
+              <span class="badge badge-red" style="margin-left:auto;">Due in 3 days</span>
+            </div>
+          </div>
+          <div class="milestone">
+            <div class="milestone-header">
+              <div class="milestone-check">&#10003;</div>
+              <span class="milestone-title">Complete 10 customer conversations</span>
+              <span class="badge badge-orange" style="margin-left:auto;">Due in 8 days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Recommended Problems -->
+    <h3 class="mt-4 mb-2">Recommended Problems for You</h3>
+    <div class="dash-grid-3">
+      <div class="card">
+        <span class="badge badge-blue mb-1">Retail</span>
+        <h4 class="mt-1">POS Lite for Kirana Stores</h4>
+        <p class="text-small text-muted mt-1">Simple billing + stock tracking app for neighbourhood shops. Validated demand from 15+ store owners.</p>
+        <div class="flex-center gap-1 mt-2">
+          <span class="tag">Needs: Builder</span>
+          <span class="tag">2 interested</span>
+        </div>
+      </div>
+      <div class="card">
+        <span class="badge badge-green mb-1">Education</span>
+        <h4 class="mt-1">Fee Tracker for Coaching Classes</h4>
+        <p class="text-small text-muted mt-1">Automated fee reminders + payment tracking for small coaching centres. Problem owner has 20 centres as contacts.</p>
+        <div class="flex-center gap-1 mt-2">
+          <span class="tag">Needs: Full-Stack Dev</span>
+          <span class="tag">1 interested</span>
+        </div>
+      </div>
+      <div class="card">
+        <span class="badge badge-purple mb-1">Services</span>
+        <h4 class="mt-1">Appointment Scheduler for Salons</h4>
+        <p class="text-small text-muted mt-1">WhatsApp-based booking system for small salons and spas. Domain expert onboard with 30+ salon contacts.</p>
+        <div class="flex-center gap-1 mt-2">
+          <span class="tag">Needs: Builder</span>
+          <span class="tag">3 interested</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 CoBuildFun. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
