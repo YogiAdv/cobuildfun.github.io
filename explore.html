@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Problems | CoBuildFun</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <!-- Top Nav -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="landing.html" class="topnav-logo">CoBuildFun</a>
+      <div class="topnav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="explore.html" class="active">Explore</a>
+        <a href="team.html">My Team</a>
+        <a href="revenue.html">Revenue</a>
+      </div>
+      <div class="topnav-right">
+        <div class="avatar" title="Priya S.">PS</div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top:2rem;padding-bottom:3rem;">
+
+    <div class="flex-between mb-2">
+      <h2>Explore Problems</h2>
+      <button class="btn btn-primary" onclick="document.getElementById('submit-modal').classList.add('open')">+ Submit a Problem</button>
+    </div>
+    <p class="text-muted mb-3">Browse validated problems looking for teammates. Find one that matches your skills and interests.</p>
+
+    <!-- Search -->
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search problems, industries, skills needed...">
+      <button class="btn btn-primary">Search</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="filter-bar">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Retail</button>
+      <button class="filter-btn">Healthcare</button>
+      <button class="filter-btn">Education</button>
+      <button class="filter-btn">Services</button>
+      <button class="filter-btn">Finance</button>
+      <button class="filter-btn">Logistics</button>
+      <button class="filter-btn">Real Estate</button>
+    </div>
+
+    <!-- Problem Cards -->
+    <div class="card problem-card">
+      <div class="flex-between">
+        <div>
+          <span class="badge badge-blue">Retail</span>
+          <span class="badge badge-green" style="margin-left:0.25rem;">Validated</span>
+        </div>
+        <span class="text-small text-muted">Posted 3 days ago</span>
+      </div>
+      <h4 class="mt-2">POS Lite for Kirana Stores</h4>
+      <p class="problem-desc">Small kirana (grocery) stores in Tier-2 cities need a simple, WhatsApp-friendly billing and stock tracking system. Current solutions are too complex or too expensive. Problem owner has interviewed 15 store owners who confirmed pain points around manual billing and stock-outs.</p>
+      <div class="problem-meta">
+        <div class="flex-center gap-1">
+          <div class="avatar avatar-sm" style="background:var(--orange-100);color:var(--orange-500);">RV</div>
+          <span class="text-small"><strong>Rahul V.</strong> — Problem Owner</span>
+        </div>
+        <span class="tag">Needs: Full-Stack Developer</span>
+        <span class="tag">Needs: UI/UX Designer</span>
+        <span class="tag">Part-time OK</span>
+        <span class="text-small text-muted">2 people interested</span>
+      </div>
+      <div class="mt-2">
+        <button class="btn btn-primary btn-sm">Express Interest</button>
+        <button class="btn btn-ghost btn-sm" style="margin-left:0.5rem;">View Details</button>
+      </div>
+    </div>
+
+    <div class="card problem-card">
+      <div class="flex-between">
+        <div>
+          <span class="badge badge-green">Education</span>
+          <span class="badge badge-orange" style="margin-left:0.25rem;">Needs Validation</span>
+        </div>
+        <span class="text-small text-muted">Posted 5 days ago</span>
+      </div>
+      <h4 class="mt-2">Fee Tracker for Coaching Classes</h4>
+      <p class="problem-desc">Coaching centres and tuition classes in India struggle with fee collection and tracking. Parents forget to pay, owners don't have systems to send reminders. Need an automated WhatsApp-based fee reminder + simple payment collection tool. Problem owner runs a network of 20+ coaching centres.</p>
+      <div class="problem-meta">
+        <div class="flex-center gap-1">
+          <div class="avatar avatar-sm" style="background:var(--green-100);color:var(--green-500);">SD</div>
+          <span class="text-small"><strong>Sunita D.</strong> — Problem Owner</span>
+        </div>
+        <span class="tag">Needs: Full-Stack Developer</span>
+        <span class="tag">Revenue Share</span>
+        <span class="text-small text-muted">1 person interested</span>
+      </div>
+      <div class="mt-2">
+        <button class="btn btn-primary btn-sm">Express Interest</button>
+        <button class="btn btn-ghost btn-sm" style="margin-left:0.5rem;">View Details</button>
+      </div>
+    </div>
+
+    <div class="card problem-card">
+      <div class="flex-between">
+        <div>
+          <span class="badge badge-purple">Services</span>
+          <span class="badge badge-green" style="margin-left:0.25rem;">Validated</span>
+        </div>
+        <span class="text-small text-muted">Posted 1 week ago</span>
+      </div>
+      <h4 class="mt-2">Appointment Scheduler for Salons</h4>
+      <p class="problem-desc">Small salons and spas lose 20–30% of potential bookings because they rely on phone calls. Need a simple WhatsApp-integrated booking link — no app download required. Domain expert has relationships with 30+ salons in Pune and Mumbai.</p>
+      <div class="problem-meta">
+        <div class="flex-center gap-1">
+          <div class="avatar avatar-sm" style="background:var(--purple-100);color:var(--purple-500);">AJ</div>
+          <span class="text-small"><strong>Ananya J.</strong> — Problem Owner</span>
+        </div>
+        <span class="tag">Needs: Builder</span>
+        <span class="tag">Needs: Growth/Ops</span>
+        <span class="tag">Equity</span>
+        <span class="text-small text-muted">3 people interested</span>
+      </div>
+      <div class="mt-2">
+        <button class="btn btn-primary btn-sm">Express Interest</button>
+        <button class="btn btn-ghost btn-sm" style="margin-left:0.5rem;">View Details</button>
+      </div>
+    </div>
+
+    <div class="card problem-card">
+      <div class="flex-between">
+        <div>
+          <span class="badge badge-red">Healthcare</span>
+          <span class="badge badge-orange" style="margin-left:0.25rem;">Needs Validation</span>
+        </div>
+        <span class="text-small text-muted">Posted 1 week ago</span>
+      </div>
+      <h4 class="mt-2">Patient Follow-Up System for Clinics</h4>
+      <p class="problem-desc">Small clinics and single-doctor practices have no system for patient follow-ups. Patients miss appointments, doctors lose revenue. Need automated reminders via WhatsApp with a simple patient record dashboard. Doctor has a network of 40+ clinic contacts.</p>
+      <div class="problem-meta">
+        <div class="flex-center gap-1">
+          <div class="avatar avatar-sm" style="background:var(--red-100);color:var(--red-500);">DK</div>
+          <span class="text-small"><strong>Dr. Kiran P.</strong> — Problem Owner</span>
+        </div>
+        <span class="tag">Needs: Full-Stack Developer</span>
+        <span class="tag">Needs: Designer</span>
+        <span class="tag">Full-time preferred</span>
+        <span class="text-small text-muted">0 people interested</span>
+      </div>
+      <div class="mt-2">
+        <button class="btn btn-primary btn-sm">Express Interest</button>
+        <button class="btn btn-ghost btn-sm" style="margin-left:0.5rem;">View Details</button>
+      </div>
+    </div>
+
+    <div class="card problem-card">
+      <div class="flex-between">
+        <div>
+          <span class="badge badge-orange">Logistics</span>
+          <span class="badge badge-green" style="margin-left:0.25rem;">Validated</span>
+        </div>
+        <span class="text-small text-muted">Posted 2 weeks ago</span>
+      </div>
+      <h4 class="mt-2">Delivery Route Planner for Local Businesses</h4>
+      <p class="problem-desc">Local delivery businesses (water, laundry, tiffin services) spend hours planning daily routes manually. Need a simple tool to optimise routes and send driver ETAs to customers. Problem owner runs a tiffin delivery service with 200+ daily deliveries.</p>
+      <div class="problem-meta">
+        <div class="flex-center gap-1">
+          <div class="avatar avatar-sm" style="background:var(--orange-100);color:var(--orange-500);">VT</div>
+          <span class="text-small"><strong>Vikram T.</strong> — Problem Owner</span>
+        </div>
+        <span class="tag">Needs: Developer (Maps API)</span>
+        <span class="tag">Revenue Share</span>
+        <span class="text-small text-muted">4 people interested</span>
+      </div>
+      <div class="mt-2">
+        <button class="btn btn-primary btn-sm">Express Interest</button>
+        <button class="btn btn-ghost btn-sm" style="margin-left:0.5rem;">View Details</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Submit Problem Modal -->
+  <div class="modal-overlay" id="submit-modal">
+    <div class="modal">
+      <div class="flex-between mb-3">
+        <h3>Submit a Problem</h3>
+        <button class="btn btn-ghost btn-sm" onclick="document.getElementById('submit-modal').classList.remove('open')">&times;</button>
+      </div>
+      <div class="form-group">
+        <label>Problem Title</label>
+        <input type="text" placeholder="e.g. POS system for kirana stores">
+      </div>
+      <div class="form-group">
+        <label>Industry</label>
+        <select>
+          <option value="">Select industry</option>
+          <option>Retail</option>
+          <option>Healthcare</option>
+          <option>Education</option>
+          <option>Services</option>
+          <option>Finance</option>
+          <option>Logistics</option>
+          <option>Real Estate</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Problem Description</label>
+        <textarea placeholder="Describe the problem. Who has it? How do you know it's real? How many potential customers do you have access to?"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Your Customer Access</label>
+        <input type="text" placeholder="e.g. I know 15 store owners in Jaipur who want this">
+      </div>
+      <div class="form-group">
+        <label>Skills You're Looking For</label>
+        <input type="text" placeholder="e.g. Full-stack developer, UI designer">
+      </div>
+      <div class="form-group">
+        <label>Compensation Model</label>
+        <select>
+          <option>Revenue Share</option>
+          <option>Equity Split</option>
+          <option>Mix of Both</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="alert('Problem submitted! (This is a prototype)')">Submit Problem</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 CoBuildFun. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Filter buttons
+    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+      });
+    });
+    // Modal close on overlay click
+    document.getElementById('submit-modal').addEventListener('click', function(e) {
+      if (e.target === this) this.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

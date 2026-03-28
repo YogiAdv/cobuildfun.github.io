@@ -11,6 +11,40 @@ header {
   color: white;
   padding: 2rem;
 }
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.nav-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: white;
+}
+.btn {
+  display: inline-block;
+  background: #4a90e2;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #357ab8;
+}
 header h1 {
   margin: 0;
   font-size: 2.5rem;

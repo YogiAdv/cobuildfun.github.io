@@ -1,0 +1,387 @@
+/* Playbook Page Styles */
+
+.playbook-page {
+  text-align: left;
+}
+
+/* Navigation */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: white;
+}
+
+/* Hero */
+.playbook-hero {
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+
+.playbook-hero h1 {
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+}
+
+.hero-label {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+/* Main content */
+.playbook-page main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Sections */
+.playbook-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.playbook-section:last-child {
+  border-bottom: none;
+}
+
+.playbook-section h2 {
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.playbook-section h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.playbook-section h4 {
+  font-size: 1.05rem;
+  color: #444;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.section-subtitle {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.playbook-section p {
+  line-height: 1.7;
+  color: #444;
+}
+
+.playbook-section ul,
+.playbook-section ol {
+  line-height: 1.8;
+  color: #444;
+  padding-left: 1.5rem;
+}
+
+.playbook-section li {
+  margin-bottom: 0.3rem;
+}
+
+/* North Star */
+.north-star {
+  background: #eef4ff;
+  border-left: 4px solid #4a90e2;
+  padding: 1.2rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 0 6px 6px 0;
+}
+
+.north-star h3 {
+  margin-top: 0;
+  color: #4a90e2;
+}
+
+.north-star .metric {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Phase styling */
+.phase-header {
+  margin-bottom: 1rem;
+}
+
+.phase-badge {
+  display: inline-block;
+  background: #4a90e2;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.phase-meta {
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+/* Success metric callout */
+.success-metric {
+  background: #f0faf0;
+  border-left: 4px solid #2ecc71;
+  padding: 0.8rem 1.2rem;
+  margin-top: 1.5rem;
+  border-radius: 0 6px 6px 0;
+  color: #333;
+}
+
+/* Anti-patterns */
+.anti-patterns {
+  background: #fef7f0;
+  border-left: 4px solid #e67e22;
+  padding: 0.8rem 1.2rem;
+  margin-top: 1.5rem;
+  border-radius: 0 6px 6px 0;
+}
+
+.anti-patterns h4 {
+  margin-top: 0;
+  color: #e67e22;
+}
+
+.anti-patterns ul {
+  margin-bottom: 0;
+}
+
+/* Decision grid (Phase 3) */
+.decision-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.decision {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.decision.continue {
+  background: #f0faf0;
+  border-left: 4px solid #2ecc71;
+}
+
+.decision.kill {
+  background: #fef0f0;
+  border-left: 4px solid #e74c3c;
+}
+
+.decision.pivot {
+  background: #fef7f0;
+  border-left: 4px solid #e67e22;
+}
+
+/* Paths grid (Phase 5) */
+.paths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.path {
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.path h4 {
+  margin-top: 0;
+}
+
+.path ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.path-a {
+  background: #f0faf0;
+  border-color: #2ecc71;
+}
+
+.path-b {
+  background: #eef4ff;
+  border-color: #4a90e2;
+}
+
+.path-c {
+  background: #f9f9f9;
+  border-color: #ccc;
+}
+
+/* Tables */
+.revenue-table,
+.advantages-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.revenue-table th,
+.advantages-table th {
+  background: #4a90e2;
+  color: white;
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+
+.revenue-table td,
+.advantages-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #444;
+}
+
+.revenue-table tr:nth-child(even),
+.advantages-table tr:nth-child(even) {
+  background: #f9fafc;
+}
+
+/* Patterns grid */
+.patterns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pattern {
+  background: #f9fafc;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+
+.pattern h4 {
+  margin-top: 0;
+  color: #4a90e2;
+}
+
+.pattern p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Roadmap */
+.roadmap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.roadmap-phase {
+  background: #f9fafc;
+  border: 1px solid #e0e0e0;
+  border-top: 3px solid #4a90e2;
+  border-radius: 0 0 8px 8px;
+  padding: 1.2rem;
+}
+
+.roadmap-phase h4 {
+  margin-top: 0;
+  color: #4a90e2;
+}
+
+.roadmap-phase ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+/* CTA section */
+.playbook-page .cta {
+  text-align: center;
+  border-bottom: none;
+}
+
+.btn {
+  display: inline-block;
+  background: #4a90e2;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #357ab8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .playbook-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .playbook-page main {
+    padding: 1rem;
+  }
+
+  .paths-grid,
+  .patterns-grid,
+  .roadmap {
+    grid-template-columns: 1fr;
+  }
+
+  .revenue-table,
+  .advantages-table {
+    font-size: 0.85rem;
+  }
+
+  .revenue-table th,
+  .advantages-table th,
+  .revenue-table td,
+  .advantages-table td {
+    padding: 0.5rem 0.6rem;
+  }
+}
